@@ -1,17 +1,60 @@
 /**/
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: blanchedalmond;
 }
 
 
 .telaInOut{ /*Zona da calculadora inteira (desde o <p> da Nota; até o <p> da A média é;)*/
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     gap: .625rem;
+    border-radius: 10px;
 }
+
+/*.calc é referente a primeira parte da calculadora - recebe nota no input e adiciona com o botao*/
+.calc{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .625rem;
+}
+.calc p{
+    margin-left: 10px;
+}
+.calc input{
+    border: none;
+    border-radius: .5rem;
+}
+.calc button{
+    margin-right: 10px;
+}
+
+
+/*.calc2 é a area que esta guardando o text area para receber cada <p> contendo: "A nota [i] foi [nota]".*/
+.calc2{
+    padding: 10px;
+}
+.calc2 textarea{
+    border-radius: .5rem;
+}
+
+
+/*.calc 3 é a area que guarda tanto o botao de calcular media quanto o <p> de "A média é:"*/
+.calc3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+
 
 
 
