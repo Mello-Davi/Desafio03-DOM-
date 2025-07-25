@@ -7,7 +7,10 @@ body{
     align-items: center;
     background-color: blanchedalmond;
 }
-
+header{
+    font-family: Montserrat;
+    font-style: italic;
+}
 
 .telaInOut{ /*Zona da calculadora inteira (desde o <p> da Nota; até o <p> da A média é;)*/
     background-color: aliceblue;
