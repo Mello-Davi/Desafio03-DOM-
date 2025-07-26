@@ -44,6 +44,10 @@ header{
     padding: 10px;
 }
 .calc2 textarea{
+    width: auto;
+    height: auto;
+    resize: none;
+    overflow-y: auto;
     border-radius: .5rem;
 }
 
