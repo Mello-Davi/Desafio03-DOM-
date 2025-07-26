@@ -7,14 +7,14 @@ let notas = [];
 
 //função para colocar a nota dentro do display
 function adicionar_nota(){
-    let valor = input.value.replace(',','.').trim; //assim ele aceita vírgula como separador decimal
-    if(valor === "") { //se o usuário não digitar nada, ele é 
+    let valor = input.value.replace(',','.').trim(); //assim ele aceita vírgula como separador decimal
+    if(valor === "") { 
         alert("Por favor, insira uma nota.");
         return;
     }
 
     let nota = Number(valor);
-    if (nota != nota|| nota <= 0 || nota >= 10) {
+    if (nota != nota|| nota < 0 || nota > 10) {
         alert("A nota digitada é inválida, por favor, insira uma nota válida.");
         return;
     }
