@@ -13,8 +13,8 @@ function adicionar_nota(){
         return;
     }
 
-    let nota = parseFloat(valor);
-    if (isNaN(nota) || nota < 0 || nota > 10) {
+    let nota = Number(valor);
+    if (nota != nota|| nota < 0 || nota > 10) {
         alert("A nota digitada é inválida, por favor, insira uma nota válida.");
         return;
     }
@@ -23,4 +23,20 @@ function adicionar_nota(){
     display.value += `A nota ${notas.length} foi ${nota}\n`;
     input.value = "";
 }
+
+//função para calcular média
+function calcular_media(){
+    if(notas.length === 0){
+        alert("Nenhuma nota foi adicionada ainda.");
+        return;
+    }
+
+    let soma = 0;
+    for (let i = 0; i < notas.length; i++) {
+        soma += notas[i];
+    }
+    let media = soma/ notas.length;
+    document.querySelector(".resultado").textContent = `A média é: ${media.toFixed(2)}`;
+}
+
 
