@@ -14,7 +14,7 @@ function adicionar_nota(){
     }
 
     let nota = Number(valor);
-    if (nota != nota|| nota < 0 || nota > 10) {
+    if (nota != nota|| nota <= 0 || nota >= 10) {
         alert("A nota digitada é inválida, por favor, insira uma nota válida.");
         return;
     }
@@ -39,4 +39,6 @@ function calcular_media(){
     document.querySelector(".resultado").textContent = `A média é: ${media.toFixed(2)}`;
 }
 
-
+//adicionando a funcionalidade dos botoes com a funcao .addEventListener
+btn_adicionar.addEventListener("click", adicionar_nota);
+btn_resultado.addEventListener("click", calcular_media);
